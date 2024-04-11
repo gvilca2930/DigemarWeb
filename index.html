@@ -2,35 +2,43 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Digemar</title>
         <link rel="shortcut icon" href="img/icono.ico">
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
     </head>
-    <header>
-        <div class="logo">
-            <svg width="150" height="50" xmlns="http://www.w3.org/2000/svg" class="texto">
-                <text x="10" y="35">DIGEMAR</text>
-            </svg>
-        </div>
-        <div class="container-header">
-            <div class="items-header">
-                <p>Home</p>
+    <body>
+        <header>
+            <div class="logo">
+                <svg width="150" height="50" xmlns="http://www.w3.org/2000/svg" class="texto">
+                    <text x="10" y="35">DIGEMAR</text>
+                </svg>
             </div>
-            <div class="items-header">
-                <p>Discoverer</p>
+            <nav class="container-header">
+                    <ul class="elements-container-header">
+                        <li class="items-header" onclick="toggleSection('soluciones')">Home</li>
+                        <li class="items-header" onclick="toggleSection('discoverer')">Discoverer</li>
+                        <li class="items-header" onclick="toggleSection('find-us')">Find us</li>
+                    </ul>
+            </nav>
+            <div class="buttons-header">
+                    <img class="button-rs" src="img/logo-de-facebook.png" alt="logo-de-facebook">
+                    <img class="button-rs" src="img/whatsapp_1231202.png" alt="whatsapp_1231202">
             </div>
-            <div class="items-header">
-                <p>Find us</p>
-            </div>
-        </div>
-        <div class="buttons-header">
-            <button class="boton">
-                <img class="boton" src="img/logo-de-facebook.png" alt="logo-de-facebook">
-            </button>
-            <button class="boton">
-                <img class="boton" src="img/whatsapp_1231202.png" alt="whatsapp_1231202">
-            </button>
-        </div>
-    </header>
-    
+        </header>
+        <main>
+            <section id="soluciones" class="seccion">
+                    <img class="logo-seccion" src="img/DG-BN.png">
+                    <h1 class="titulo-seccion">SOLUCIONES</h1>
+                    <h2 class="subtitulo-seccion">DIGEMAR</h2>        
+            </section>
+            <section id="discoverer" class="seccion">
+                <h1>Discoverer</h1>
+            </section>
+            <section id="find-us" class="seccion">
+                <h1>Find Us</h1>
+            </section>
+        </main>
+    </body>
 </html>

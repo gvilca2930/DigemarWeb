@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos para el encabezado (header) */
+        header {
+            height: 100vh; /* El encabezado ocupa el 100% de la altura visible */
+            background-image: url(img/pbg.jpg);
+            background-size: cover; /* La imagen de fondo cubre todo el encabezado */
+            background-position: center; /* La imagen de fondo se posiciona en el centro */
+            color: white; /* Color del texto sobre la imagen */
+            text-align: center; /* Centrar el contenido del encabezado */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            /* Para añadir una capa oscura semi-transparente sobre la imagen */
+            /* background-color: rgba(0, 0, 0, 0.5); */
+        }
+
+        /* Estilos para el texto dentro del encabezado */
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        /* Estilos para el contenido principal */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para el enlace dentro del encabezado */
+        header a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        header a:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 768px) {
+            header {
+                background-size: contain; /* Ajustar la imagen para dispositivos más pequeños */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <a href="#about">Más información</a>
+    </header>
+
+    <main id="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget lectus vel nunc tempor bibendum.</p>
+    </main>
+</body>
+</html>
